@@ -1,157 +1,136 @@
-# Tareas hechas de auditoria
 <div align="center">
 
-# 🛡️ Auditoría de Seguridad Informática
+# 🛡️ Cybersecurity Audits
 
-### 🔍 Repositorio de prácticas de auditoría, análisis forense y seguridad ofensiva
+### Security Assessments · Web Application Security · Network Analysis · Technical Reporting
 
-![GitHub last commit](https://img.shields.io/github/last-commit/nawras2967/Paloma_auditoria_tarea?style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/nawras2967/Paloma_auditoria_tarea?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/nawras2967/Paloma_auditoria_tarea?style=for-the-badge)
-![GitHub top language](https://img.shields.io/github/languages/top/nawras2967/Paloma_auditoria_tarea?style=for-the-badge)
+**Paloma Casabona** · Cybersecurity Analyst (SOC) · Software Developer
 
----
+*From evidence to actionable security improvements.*
 
-*"La seguridad no consiste únicamente en encontrar vulnerabilidades, sino en comprender su origen, evaluar su impacto y proponer medidas para mitigarlas."*
+[![Focus](https://img.shields.io/badge/Focus-Security%20Auditing-0d9488?style=flat-square)](#about-this-repository)
+[![Methodology](https://img.shields.io/badge/Methodology-OWASP-2563eb?style=flat-square)](#methodology)
+[![Documentation](https://img.shields.io/badge/Documentation-Technical%20Reports-475569?style=flat-square)](#featured-security-assessment)
 
 </div>
 
 ---
 
-# 📚 Índice
+## 🔎 About this repository
 
-- [🎯 Objetivo](#-objetivo)
-- [🛠️ Herramientas utilizadas](#️-herramientas-utilizadas)
-- [📂 Contenido del repositorio](#-contenido-del-repositorio)
-- [📄 Informes](#-informes)
-- [🧭 Metodología](#-metodología)
-- [📁 Estructura](#-estructura-del-repositorio)
-- [⚖️ Aviso legal](#️-aviso-legal)
+This repository brings together my hands-on cybersecurity work, including **security assessments, web application analysis, network traffic inspection, controlled laboratory exercises, technical evidence, and remediation guidance**.
 
----
+My approach emphasizes not only identifying potential weaknesses, but also **interpreting their actual impact, distinguishing automated findings from verified vulnerabilities, and proposing practical safeguards**.
 
-# 🎯 Objetivo
+The collection includes coursework from information security auditing modules alongside independent, authorized assessments.
 
-Este repositorio recopila las prácticas desarrolladas durante el módulo de **Auditoría de Seguridad Informática**, incluyendo informes técnicos, análisis de tráfico de red, auditorías web, resolución de laboratorios y recopilación de evidencias.
+## ⭐ Featured security assessment
 
-Cada práctica documenta la metodología utilizada, las herramientas empleadas, los hallazgos obtenidos y las recomendaciones propuestas para mejorar la seguridad del sistema analizado.
+### Web Security Assessment — palomacasabona.com | November 2026
 
----
+**Scope:** My own public portfolio website, with an additional comparison against a locally served build.  
+**Approach:** OWASP ZAP baseline / passive assessment; review of HTTP responses and security configuration.  
+**Tools:** OWASP ZAP, Docker, HTTP inspection.
 
-# 🛠️ Herramientas utilizadas
+| Production scan summary | Result |
+|:--|--:|
+| URLs assessed | 41 |
+| High-risk alert categories | **0** |
+| Medium-risk alert categories | **4** |
+| Low-risk alert categories | **2** |
+| Informational alert categories | **5** |
 
-| Herramienta | Finalidad |
-|------------|-----------|
-| 🛰️ Nmap | Descubrimiento de hosts y servicios |
-| 🕷️ Burp Suite | Auditoría de aplicaciones web |
-| 🧪 Wireshark | Captura y análisis de tráfico |
-| 🐧 Ubuntu | Laboratorio de trabajo |
-| 🐉 Kali Linux | Pentesting |
-| 🐳 Docker | Entornos vulnerables |
-| 🛍️ OWASP Juice Shop | Laboratorio de seguridad web |
-| 🔍 FFUF | Enumeración de directorios |
-| ⚙️ cURL | Peticiones HTTP |
-| 🌐 Firefox | Navegación y pruebas |
-| 📦 Git & GitHub | Control de versiones |
+**Topics reviewed:** CSRF protections on a public contact form; Content Security Policy (`style-src 'unsafe-inline'`); Cross-Origin Resource Sharing (`Access-Control-Allow-Origin: *`); Subresource Integrity for third-party stylesheets; Cross-Origin-Embedder-Policy; HTTP Strict Transport Security; caching behavior and informational disclosures.
 
----
+> **Interpretation:** These figures represent automated alert categories, **not 11 confirmed exploitable vulnerabilities**. Findings require context-specific validation. Some are hardening recommendations or low-impact observations for public static content.
 
-# 📂 Contenido del repositorio
+### 📑 Assessment deliverables
 
-📄 Informes técnicos de auditoría
+| Language | Report |
+|:--|:--|
+| 🇪🇸 Spanish | [Security assessment (PDF)](Informe_Auditoria_Seguridad_Paloma_Casabona_2026.pdf) |
+| 🇬🇧 English | Translation planned |
+| 🇷🇺 Russian | Translation planned |
+| 🇸🇦 Arabic | Translation planned |
+| 🇨🇳 Simplified Chinese | Translation planned |
 
-🌐 Auditorías web Black Box
-
-🧪 Análisis forense con Wireshark
-
-🛍️ Resolución de laboratorios OWASP Juice Shop
-
-🕷️ Prácticas con Burp Suite
-
-📸 Evidencias y capturas de pantalla
-
-📑 Documentación técnica
+*The Spanish PDF link assumes the file is stored alongside this README. Update the relative path if you place it in a subfolder.*
 
 ---
 
-# 📄 Informes
+## 🧰 Tools & technologies
 
-Entre la documentación incluida se encuentran, entre otros:
+| Area | Tools / environments |
+|:--|:--|
+| Web security assessment | OWASP ZAP, Burp Suite, OWASP Juice Shop |
+| Network inspection | Wireshark, Nmap |
+| HTTP and discovery | cURL, FFUF |
+| Systems and laboratories | Kali Linux, Ubuntu, Docker |
+| Documentation and version control | Git, GitHub, Markdown, PDF reporting |
 
-- 📘 Informe de análisis de tráfico con Wireshark.
-- 🌐 Informe de auditoría web.
-- 🕷️ Prácticas de Burp Suite.
-- 🛍️ Resolución de retos OWASP Juice Shop.
-- 📊 Evidencias obtenidas durante las auditorías.
+*Tools are listed as part of the repository's broader practical work; they were not all used in the featured ZAP assessment.*
 
 ---
 
-# 🧭 Metodología
+## 🧭 Methodology
 
 ```text
-Reconocimiento
-      │
-      ▼
-Enumeración
-      │
-      ▼
-Análisis
-      │
-      ▼
-Validación de hallazgos
-      │
-      ▼
-Obtención de evidencias
-      │
-      ▼
-Evaluación del impacto
-      │
-      ▼
-Recomendaciones
+Define authorized scope
+         ↓
+Reconnaissance and asset review
+         ↓
+Passive assessment / controlled testing
+         ↓
+Analyze and validate findings
+         ↓
+Assess context, likelihood and impact
+         ↓
+Recommend safeguards and remediation
+         ↓
+Document evidence and retest where applicable
 ```
 
----
-
-# 📁 Estructura del repositorio
-
-```text
-📦 Paloma_auditoria_tarea
-│
-├── 📄 Informes PDF
-├── 📂 Evidencias
-├── 📂 Capturas
-├── 📂 Burp Suite
-├── 📂 OWASP Juice Shop
-├── 📂 Wireshark
-├── 📂 Recursos
-└── README.md
-```
+Findings are assessed in context. Reports distinguish **observed configuration**, **potential risk**, **verification status**, and **recommended remediation**.
 
 ---
 
-# 🎓 Competencias trabajadas
+## 📂 Areas covered
 
-- Auditoría de seguridad informática
-- Análisis de tráfico de red
-- Enumeración de servicios
-- Evaluación de vulnerabilidades
-- Seguridad en aplicaciones web
-- Obtención y documentación de evidencias
-- Elaboración de informes técnicos
-- Uso de herramientas profesionales de ciberseguridad
+- **Web application security:** HTTP headers, browser security policies, exposed endpoints, and configuration review.
+- **Network traffic analysis:** Packet inspection and protocol analysis with Wireshark.
+- **Security laboratories:** Authorized exercises using OWASP Juice Shop and Burp Suite.
+- **Technical reporting:** Scope, methodology, findings, evidence, risk interpretation, and preventive controls.
+- **Defensive improvement:** Mitigation recommendations, hardening, and validation steps.
 
 ---
 
-# ⚖️ Aviso legal
+## 🎯 Skills demonstrated
 
-Todo el contenido de este repositorio ha sido elaborado exclusivamente con fines académicos y formativos. Las pruebas y técnicas descritas han sido realizadas únicamente sobre laboratorios controlados o sistemas expresamente autorizados.
+Security assessment · Technical documentation · Network traffic analysis · Web security fundamentals · Evidence handling · Risk interpretation · Remediation planning · Linux and Docker environments
+
+---
+
+## ⚖️ Responsible use & authorization
+
+All practical assessments documented here are intended for educational, defensive, or professional development purposes.
+
+Testing is performed **only on systems I own, controlled lab environments, or systems with explicit authorization**.
+
+Public reports are reviewed to avoid disclosing credentials, tokens, sensitive data, or information that would unnecessarily increase risk.
+
+---
+
+## 👩‍💻 Author
+
+**Paloma Casabona**  
+Cybersecurity Analyst (SOC) · Software Developer
+
+[GitHub Profile](https://github.com/nawras2967)
 
 ---
 
 <div align="center">
 
-### ⭐ Gracias por visitar este repositorio
-
-💻 Ciberseguridad • Auditoría • Pentesting • Forense Digital
+*Security is not only about detecting issues — it is about understanding, prioritizing, and reducing risk.*
 
 </div>
